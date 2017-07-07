@@ -1,0 +1,892 @@
+/* own style */
+
+html {
+    height: 100%;
+    font-size: 12px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: '微软雅黑';
+    line-height: 1.5;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+input {}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+#wx_pic {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    position: relative;
+}
+
+.page {}
+
+section {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 12.0rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem
+}
+
+button {
+    border: 0;
+    font: 1.1rem '微软雅黑';
+}
+
+.marbot6 {
+    margin-bottom: 0.6rem;
+}
+
+.hide {
+    display: none;
+}
+
+.btn1,
+.question .title {
+    background-color: #ffd800;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.23);
+    color: #815311;
+}
+
+.btn1 {
+    border: 0;
+    border-radius: 20px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bg img {
+    height: 100%;
+}
+
+
+/*loading */
+
+.loading {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 345;
+}
+
+.loading img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* 游戏开始界面 */
+
+.welcome {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.welcome .bg {}
+
+.welcome .bg img {}
+
+.welpeopic {
+    width: 85.9594%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -42.6%;
+}
+
+.welcome .info {
+    width: 47.96875%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24%;
+}
+
+.countdown {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: 1px solid #121616;
+    background-color: #fce068;
+    border-radius: 10px;
+    padding: 0.5% 2%;
+}
+
+.countdown span {
+    display: none;
+}
+
+.start_btn {
+    width: 72%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+}
+
+
+/*introduce 游戏介绍页面 */
+
+.intro {
+    padding-top: 15%;
+    width: 100%;
+}
+
+.intro .title {}
+
+.intro .info {
+    padding: 10% 5%;
+    background-color: #fce068;
+    border: 2px solid #121616;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10% auto 0;
+}
+
+.info .context p.intinput {
+    background-color: #fff;
+    border: 2px solid #121616;
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    height: 30%;
+    padding-left: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.intro .info input {
+    width: 65%;
+    height: 80%;
+    line-height: 80%;
+    /*border: 1px solid #000;*/
+    border: 0;
+    position: relative;
+    top: -0.1rem;
+    font-size: 0.7rem;
+}
+
+.info .context {
+    font-size: 1.4rem;
+}
+
+.info .context p {}
+
+
+/* 游戏界面 */
+
+.question {
+    padding-top: 20%;
+}
+
+.question .bg {}
+
+.money {
+    border-radius: 10px;
+    background-color: #196450;
+    color: #fff;
+    padding: 0.1rem 0.9rem 0.1rem 1.9rem;
+    position: absolute;
+    left: 1.8rem;
+    top: 5%;
+    min-width: 1.65rem;
+    display: inline-block;
+    text-align: right;
+}
+
+.money:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.1rem;
+    z-index: 1;
+    background: url(../images/coin.png) no-repeat left center;
+    background-size: 1.6rem 1.6rem;
+    padding-left: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.question .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.5rem;
+    border-radius: 35px;
+    padding: 10px;
+    width: 4.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.describe {
+    width: 88.57%;
+    margin: 0 auto;
+    font-family: '华文琥珀';
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.describe .destop {
+    background: url(../images/q-top.png) top left;
+    height: 0.85rem;
+}
+
+.describe .desbot {
+    background: url(../images/q-bot.png) top left;
+    height: 0.875rem;
+}
+
+.describe .destop,
+.describe .desbot {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.describe .desmid {
+    padding: 0.2rem 1.2rem;
+    background-color: #fcbc37;
+    border-right: 1px solid #121616;
+    border-left: 1px solid #121616;
+}
+
+.describe {
+    /*text-shadow: 1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0);
+    -webkit-text-shadow: 1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0);
+     filter: Glow(color=rgb(0, 0, 0), strength=1);*/
+}
+
+
+/*.describe {
+    background: url(../images/q-t.png) no-repeat top left;
+    background-size:100% 100% ;
+}*/
+
+.choices {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 12%;
+    background: url(../images/q-a-b.png) no-repeat top left;
+    background-size: 100% 100%;
+    padding: 9% 9% 12% 4%;
+    display: block;
+}
+
+.choice {}
+
+.choices li {
+    margin-left: 5%;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+    position: relative;
+    padding: 0.8rem 0.4rem 0.4rem;
+    background-color: #ffc13a;
+    border: 1px solid #121616;
+    border-radius: 7px;
+}
+
+.choices li.active {
+    background-color: #f04854;
+    color: #fff;
+}
+
+.choices li.active {
+    -moz-box-shadow: 0 2px 1px #ff0000 inset;
+    /* For Firefox3.6+ */
+    -webkit-box-shadow: 0 2px 1px #ff0000 inset;
+    /* For Chrome5+, Safari5+ */
+    box-shadow: 0 2px 1px #ff0000 inset;
+    /* For Latest Opera */
+}
+
+.choices li:before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 0.3rem;
+}
+
+.choices li:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    position: absolute;
+    top: 0.3rem;
+    left: 2rem;
+}
+
+.choice:first-child {}
+
+.choice:last-child {}
+
+.choice input[type='radio'] {
+    display: none;
+    width: 0.425rem;
+    height: 0.425rem;
+    margin-right: 0.2rem;
+    position: absolute;
+    top: 40%;
+}
+
+.choice p {}
+
+.dead_mask {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+
+/* 弹出层  */
+
+.pop {
+    width: 85%;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 4rem;
+}
+
+
+/*下一步 */
+
+.chosemsg .msgcontent {
+    background: url(../images/next.png) no-repeat top left;
+    background-size: 100% auto;
+    padding: 25% 10%;
+    margin: 0 auto;
+    line-height: 1.5
+}
+
+.chosemsg .msgcontent p {
+    min-height: 6rem;
+    font-size: 1.1rem;
+}
+
+.btn-next {
+    width: 40%;
+    padding: 0.6rem 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 1.4rem;
+}
+
+
+/*信息框*/
+
+.msg .msgimg {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.msg .msgcontent {
+    background-color: #ffe16e;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 0.8rem;
+    min-height: 3rem;
+    font-size: 1.1rem;
+}
+
+.tip {
+    padding: 5px;
+    background-color: #e5b804;
+    color: #fff;
+    padding-left: 1.7rem;
+    position: relative;
+}
+
+.tip:before {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    background: url('../images/guang.png') no-repeat center;
+    background-size: cover;
+    margin-left: 0.2rem;
+}
+
+.butlist {
+    display: flex;
+}
+
+.butlist button {
+    width: 100%;
+    height: 3.5rem;
+    background: #fff;
+}
+
+.butlist button:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+.butlist button:last-child {
+    border-bottom-right-radius: 30px;
+    border-left: 1px solid #facb03;
+}
+
+.arrow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.arrow img {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+
+/*页面音乐播放*/
+
+.palybox {
+    position: absolute;
+    top: 1%;
+    right: 0.55rem;
+    z-index: 100;
+    width: 2rem;
+    height: 2rem;
+    background: url('../images/music.png') no-repeat;
+    background-size: cover;
+}
+
+
+/*引流button*/
+
+.ad {
+    width: 11%;
+    position: fixed;
+    top: 30%;
+    right: 1%;
+}
+
+
+/* 媒体选择器*/
+
+@media screen and (min-width: 641px) {
+    html,
+    body {
+        font-size: 20px;
+    }
+}
+
+
+/* scale to 320px  2*/
+
+@media screen and (min-width: 601px) and (max-width: 640px) {
+    html,
+    body {
+        font-size: 20px;
+    }
+}
+
+
+/* scale to 320px  1.875*/
+
+@media screen and (min-width: 541px) and (max-width: 600px) {
+    html,
+    body {
+        font-size: 18.75px;
+    }
+}
+
+
+/* scale to 320px  1.6875*/
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+    html,
+    body {
+        font-size: 16.875px;
+    }
+}
+
+
+/* scale to 320px  1.5*/
+
+@media screen and (min-width: 415px) and (max-width: 480px) {
+    html,
+    body {
+        font-size: 15px;
+    }
+}
+
+
+/* scale to 320px  1.29375*/
+
+@media screen and (min-width: 401px) and (max-width: 414px) {
+    html,
+    body {
+        font-size: 12.9375px;
+    }
+}
+
+
+/* scale to 320px  1.25*/
+
+@media screen and (min-width: 376px) and (max-width: 400px) {
+    html,
+    body {
+        font-size: 12.5px;
+    }
+}
+
+
+/* scale to 320px  1.171875*/
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+    html,
+    body {
+        font-size: 11.71875px;
+    }
+}
+
+
+/* scale to 320px  1.125 */
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    html,
+    body {
+        font-size: 11.25px;
+    }
+    .chosemsg .msgcontent p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        font-size: 10px;
+    }
+    .chosemsg .msgcontent {
+        line-height: 1.3
+    }
+    .chosemsg .msgcontent p {
+        font-size: 1rem;
+    }
+}
+
+
+/* 动画*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transition: none;
+    transition: none
+}
+
+@-webkit-keyframes bounceInDown {
+    0%,
+    100%,
+    60%,
+    75%,
+    90% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0)
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes bounceInDown {
+    0%,
+    100%,
+    60%,
+    75%,
+    90% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0)
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown
+}
+
+@-webkit-keyframes moveInRight {
+    0% {
+        -webkit-transform: translate3d(120%, 0, 0);
+        transform: translate3d(120%, 0, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        -webkit-transform: translate3d(120%, 0, 0);
+        transform: translate3d(120%, 0, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.moveInRight {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: moveInRight;
+    animation-name: moveInRight
+}
+
+@-webkit-keyframes moveOutLeft {
+    0% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-120%, 0, 0);
+        transform: translate3d(-120%, 0, 0)
+    }
+}
+
+@keyframes moveOutLeft {
+    0% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-120%, 0, 0);
+        transform: translate3d(-120%, 0, 0)
+    }
+}
+
+.moveOutLeft {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: moveOutLeft;
+    animation-name: moveOutLeft
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateY(-3px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateY(3px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(-3px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(3px);
+    }
+}
+
+.shake {
+    animation: shake 2s ease-in-out infinite;
+}
+
+
+/* 淡入 */
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein {
+    animation: fadein 1s ease-in-out;
+}
+
+
+/* 淡入 */
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeout {
+    animation: fadeout .5s ease-in-out;
+}
+
+@-webkit-keyframes rotateall {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateall {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateall {
+    animation: rotateall 1s linear infinite;
+}

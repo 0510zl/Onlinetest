@@ -1,0 +1,94 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transition: none;
+    transition: none
+}
+
+
+/* animation collection */
+/*向下跳*/
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown
+}
+
+@keyframes bounceInDown {
+    0%,
+    100%,
+    60%,
+    75%,
+    90% {
+        -webkit-transition-timing-function: ;
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0)
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0)
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+/*从右边移入*/
+
+.moveInRight {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: moveInRight;
+    animation-name: moveInRight
+}
+
+@keyframes moveInRight {
+    0% {
+        -webkit-transform: translate3d(120%, 0, 0);
+        transform: translate3d(120%, 0, 0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+/*从左边移出*/
+.moveOutLeft {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: moveOutLeft;
+    animation-name: moveOutLeft
+}
+
+@keyframes moveOutLeft {
+    0% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-120%, 0, 0);
+        transform: translate3d(-120%, 0, 0)
+    }
+}

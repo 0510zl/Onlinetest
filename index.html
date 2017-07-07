@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>模拟人生——人生好比狗生，有时还不如狗</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="palybox rotateall hide">
+            <audio id="bgaudio" loop="loop" preload="auto">
+                <source src="images/7679.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+            </audio>
+            <audio class="sucaudio voice" preload="auto">
+                <source src="images/5371.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+            </audio>
+            <audio class="failaudio voice" preload="auto">
+                <source src="images/427.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+            </audio>
+            <audio class="nextaudio voice" preload="auto">
+                <source src="images/5371.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="loading"><img src="images/loading.gif"></div>
+        <!-- 游戏开始界面 -->
+        <div class="page welcome hide">
+            <div class="bg"><img src="images/g-b.jpg"></div>
+            <div class="countdown ">关闭<span>4</span></div>
+            <div class="welpeopic"><img src="images/g-p.png"></div>
+            <div class="info">
+                <img src="images/g-text.png">
+            </div>
+        </div>
+        <!-- 游戏介绍界面 -->
+        <div class="page intro hide ">
+            <div class="bg"><img src="images/i-b.png"></div>
+            <div class="title"><img src="images/i-tit.png"></div>
+            <div class="info">
+                <div class="context">
+                    <p class="intinput hide">
+                        <lable for="name">姓名：</lable>
+                        <input type="text" name="name" />
+                    </p>
+                    <p>时间：2006年大学毕业；</p>
+                    <p class="marbot6">手头有3000块启动资金</p>
+                    <p>你来自乡下，父母含辛茹苦把你拉扯大，供你上大学，如今你大学毕业了。四年大学生涯花光了家里所有的积蓄。你要靠自己的双手来打拼，孝敬父母，你要让大家知道，你是好样的！</p>
+                </div>
+            </div>
+            <a class="start_btn"><img src="images/i-but.png" /></a>
+        </div>
+        <!--游戏界面-->
+        <div class="page question next hide">
+            <div class="bg"><img src="images/q-b.png"></div>
+            <span class="money">50万</span>
+            <h1 class="title hide">第一题</h1>
+            <div class="describe">
+                <p class="destop"></p>
+                <p class="desmid">
+                    2015年，你的嘟嘟打车公司发展迅速，公司估值达到5000W。现在出现了你的竞争对手，哔哔打车。你会：
+                </p>
+                <p class="desbot"></p>
+            </div>
+            <ul class="choices">
+                <li class="choice active">
+                    <input type="radio" name="a" value="0" checked="checked">
+                    <p>商业中心国贸 </p>
+                </li>
+                <li class="choice">
+                    <input type="radio" name="a" value="1">
+                    <p>交通中心东直门，全年外来人口穿梭不断交通中心东直门，全年外来人口穿梭不断</p>
+                </li>
+                <li class="choice">
+                    <input type="radio" name="a" value="2">
+                    <p>院校中心学院路，管它清华北大学生钱最好赚</p>
+                </li>
+            </ul>
+        </div>
+        <!--msg 弹出层-->
+        <div class="dead_mask hide"></div>
+        <div class="pop msg hide">
+            <div class="msgimg">
+                <img src="images/winner.png">
+            </div>
+            <div class="msgcontent">
+                炒房团被国家政策打压，你的20套房砸在手里，卖不出去。虽然你名义上成了一个亿万富翁，但是你只好好出租这些房屋，靠租金过着小康的日子。
+            </div>
+            <P class="tip hide">智者你好！成功可以有很多种方法，大胆去尝试你的模拟人生吧！</P>
+            <div class="butlist">
+                <button class="btn-start">再试一次</button>
+                <button class="btn-share">一键分享</button>
+            </div>
+        </div>
+        <div class="arrow hide">
+            <img src='images/arrow.png' />
+        </div>
+        <div class="pop chosemsg hide">
+            <div class="msgcontent">
+                <p>
+                    四合院的价格与日俱增，两三年后，有个老外看中了你的四合院，出价一个亿，但是你没有卖！2017年，你成为了一个拥有亿元房产的小土豪，过起了老北京自在的日子。
+                </p>
+            </div>
+            <button class="btn-next btn1" type="button">下一步</button>
+        </div>
+    </div>
+    <div class="ad shake">
+         <a href="#"><img src="images/300.png"></a>
+    </div>
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+     <script src="js/weixin/weixin.js" type="text/javascript"></script>
+    <script src="js/preloadimage.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/ceshi.js" type="text/javascript"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // $(".question").removeClass("hide")
+        // $(".intro").removeClass("hide")
+        // $(".dead_mask").removeClass("hide");
+        // $(".msg").removeClass("hide");
+        // $(".arrow").removeClass("hide")
+
+        $.getJSON('data/data.json?ran=' + new Date(), function(data) {
+            new Ceshi({
+                "data": data,
+                "contain": $(".container")
+            });
+        });
+    })
+    </script>
+
+</body>
+
+</html>
